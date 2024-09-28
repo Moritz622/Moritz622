@@ -1,0 +1,194 @@
+body {
+    background-color: #150c33;
+    color: white;
+    font-family: Bahnschrift;
+    overflow: hidden;
+}
+
+#wrapper {
+    display: flex;
+    width: 200%;
+}
+
+    #wrapper.split {
+        width: 100%;
+        transition: 1s;
+    }
+
+#home {
+    width: 50%;
+}
+
+.center {
+    flex-direction: column;
+    display: flex;
+}
+
+h1 {
+    font-size: 100px;
+    background: linear-gradient(to right, darkviolet, mediumvioletred);
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 32px;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+    animation: fadeIn 1s;
+}
+
+.slideAnimation h1 {
+    font-size: 70px;
+    transition: 1s;
+    border-radius: 12px;
+}
+
+
+h2 {
+    font-size: 64px;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+    animation: fadeIn 1s;
+}
+
+.slideAnimation h2 {
+    font-size: 90px;
+    transition: 1s;
+}
+
+
+h3 {
+    font-size: 36px;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+    animation: fadeIn 1s;
+}
+
+.aboutme {
+    margin-top: 100px;
+    animation: fadeIn 1s;
+}
+
+    .aboutme .box {
+        box-shadow: #322854 0px 0px 25px 10px;
+        border-radius: 16px;
+        width: 60%;
+        text-align: left;
+        background: url('res/programming1.jpg');
+        height: 500px;
+        display: flex;
+        margin-bottom: 32px;
+        font-size: 28px;
+    }
+
+        .aboutme .box p {
+            margin-left: 16px;
+        }
+
+        .aboutme .box h3 {
+            font-size: 2em;
+            margin-left: 16px;
+            margin-block-start: 25px;
+            margin-block-end: 3px;
+            color: #9afffe;
+            text-shadow: 3px 3px #150c33;
+        }
+
+    .aboutme .picture {
+        height: 100%;
+        border-radius: 16px;
+    }
+
+    .aboutme .text {
+        margin-right: 32px;
+    }
+
+    .aboutme .box.slideAnimation {
+        font-size: 18px;
+        height: 400px;
+        transition: 1s;
+        width: 80%;
+    }
+
+@keyframes fadeIn {
+    0% {
+        margin-top: 100%;
+    }
+
+    70% {
+        margin-top: -15px;
+    }
+
+    100% {
+    }
+}
+
+.arrowRight {
+    position: absolute;
+    right: 32px;
+    height: 64px;
+    width: 64px;
+    text-align: center;
+    margin: 0;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border-radius: 100%;
+    box-shadow: 0px 0px 10px 1px white;
+    opacity: 0.3;
+    transition: 0.2s;
+}
+
+    .arrowRight img {
+        margin-top: 8px;
+        margin-left: 4px;
+        height: 48px;
+    }
+
+    .arrowRight:hover {
+        opacity: 1;
+        transition: 0.2s;
+    }
+
+.slide {
+    position: relative;
+    left: 50%;
+    width: fit-content;
+    transform: translate(-50%);
+}
+
+.slideAnimation {
+    animation: slideLeft 1s ease-in-out forwards;
+}
+
+@keyframes slideLeft {
+    from {
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    to {
+        left: 25px;
+        transform: translate(0%);
+    }
+}
+
+
+#projects {
+    width: 50%;
+    opacity: 0;
+    text-align: right;
+}
+
+    #projects.show {
+        opacity: 1;
+        transition: 1s;
+    }
+
+    #projects .header {
+        text-align: right;
+        position: relative;
+        right: 25px;
+    }
+
+.projectTree {
+
+}
